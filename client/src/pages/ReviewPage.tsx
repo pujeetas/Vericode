@@ -21,7 +21,7 @@ export default function ReviewPage() {
   useEffect(() => {
     const fetchReview = async () => {
       try {
-        const response = await fetch(`http://15.135.82.82:5000/${id}`)
+        const response = await fetch(`https://vericode-fjt5.onrender.com/${id}`)
         if (!response.ok) {
           setError('Review not found')
           return
