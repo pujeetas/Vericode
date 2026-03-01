@@ -4,7 +4,11 @@ const cors = require("cors");
 const reviewRoute = require("./routes/review");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(
+  cors({
+    origin: ["https://vericode-ten.vercel.app", "http://localhost:3000"],
+  }),
+);
 app.use(express.json());
 
 app.get("/health", (req, res) => {
