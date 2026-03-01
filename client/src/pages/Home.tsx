@@ -17,7 +17,7 @@ export default function Home() {
     setReviewId('')
     setLoading(true)
 
-    const response = await fetch('https://vericode-fjt5.onrender.com', {
+    const response = await fetch('https://vericode-fjt5.onrender.com/review', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ code, reviewType })
