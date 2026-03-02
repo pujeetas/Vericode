@@ -17,7 +17,7 @@ export default function HistoryPage() {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await fetch('https://vericode-fjt5.onrender.com')
+        const response = await fetch('https://vericode-fjt5.onrender.com/review')
         const data = await response.json()
         setReviews(data)
       } catch (error) {
